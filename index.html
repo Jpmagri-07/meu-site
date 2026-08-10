@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+  <meta
+    name="description"
+    content="Portfólio pessoal de João Pedro Magri — tecnologia, desenvolvimento e projetos."
+  />
+
+  <meta name="theme-color" content="#070b16" />
+
+  <title>João Pedro Magri | Desenvolvedor</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    rel="shortcut icon"
+    href="img/bb4f4638-98e2-4e11-98af-eeaf085953af.jpg"
+    type="image/x-icon"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <div class="bg-grid"></div>
+
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+
+    <a class="brand" href="#inicio">
+        <img src="imgs/perfil-JP2.jpg" alt="Foto de João Pedro Magri"/>
+      <strong>João Pedro</strong>
+    </a>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#skills">Skills</a>
+      <a href="#github">GitHub</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button
+      id="toggle-theme"
+      class="icon-btn"
+      aria-label="Alternar tema"
+    >
+      ☀️
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero container">
+
+      <div class="hero-copy">
+
+        <div class="status">
+          <span></span>
+          Disponível para novas oportunidades
+        </div>
+
+        <p class="eyebrow">
+          SISTEMAS DE INFORMAÇÃO · TECNOLOGIA
+        </p>
+
+        <h1>
+          Construindo o <em>próximo</em> passo
+          <br />
+          com tecnologia.
+        </h1>
+
+        <p class="lead">
+          Sou João Pedro Magri, estudante de Sistemas de Informação
+          e desenvolvedor em formação. Transformo curiosidade em
+          projetos, código e aprendizado contínuo.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn primary"
+            href="#github"
+          >
+            Ver meu GitHub
+            <span>↗</span>
+          </a>
+
+          <a
+            class="btn ghost"
+            href="pdf/Currículo A4 simples preto.pdf"
+            target="_blank"
+            rel="noopener"
+            download
+          >
+            Baixar currículo
+          </a>
+
+        </div>
+
+        <div class="quick-stats">
+
+          <div>
+            <strong>BSI</strong>
+            <span>UTFPR</span>
+          </div>
+
+          <div>
+            <strong>JS</strong>
+            <span>full stack JR</span>
+          </div>
+
+          <div>
+            <strong>Git</strong>
+            <span>Versionamento</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD DE CÓDIGO -->
+      <div class="hero-visual">
+
+        <div class="code-card">
+
+          <div class="window-bar">
+
+            <i></i>
+            <i></i>
+            <i></i>
+
+            <span>joao-pedro.js</span>
+
+          </div>
+
+          <pre><code><span class="pink">const</span> developer = {
+  <span class="blue">nome</span>: <span class="green">"João Pedro Magri"</span>,
+  <span class="blue">foco</span>: <span class="green">"Tecnologia"</span>,
+  <span class="blue">linguagens</span>: [
+    <span class="green">"Java"</span>
+    <span class="green">"Python"</span>
+    <span class="green">"JS"</span>,
+    <span class="green">"React"</span>
+  ],
+  <span class="blue">mentalidade</span>: <span class="green">"construir e aprender"</span>
+};
+
+<span class="pink">while</span> (true) {
+  developer.<span class="yellow">learn</span>();
+  developer.<span class="yellow">build</span>();
+}</code></pre>
+
+        </div>
+
+
+        <div class="floating-chip chip-one">
+          ⌘ Código
+        </div>
+
+        <div class="floating-chip chip-two">
+          ✦ Criatividade
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section container">
+
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Sobre mim</h2>
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="glass about-card">
+
+          <p class="big">
+            Tecnologia é o lugar onde a
+            <strong>curiosidade encontra criação.</strong>
+          </p>
+
+          <p>
+            Sou estudante de Sistemas de Informação na UTFPR-Londrina,
+            apaixonado por programação e por aprender como as
+            coisas funcionam.
+          </p>
+
+          <p>
+            Meu objetivo é evoluir constantemente e participar
+            da construção de soluções úteis, modernas e
+            impactantes.
+          </p>
+
+        </div>
+
+
+        <div class="glass mini-card">
+
+          <span>01</span>
+
+          <strong>Aprender</strong>
+
+          <p>
+            Transformar desafios em conhecimento.
+          </p>
+
+        </div>
+
+
+        <div class="glass mini-card">
+
+          <span>02</span>
+
+          <strong>Construir</strong>
+
+          <p>
+            Colocar ideias em prática através do código.
+          </p>
+
+        </div>
+
+
+        <div class="glass mini-card">
+
+          <span>03</span>
+
+          <strong>Evoluir</strong>
+
+          <p>
+            Buscar novas tecnologias e melhores soluções.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section container">
+
+      <div class="section-heading">
+        <span>02</span>
+        <h2>Formação & aprendizado</h2>
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <span class="tag">
+              ATUAL
+            </span>
+
+            <h3>
+              Sistemas de Informação · UTFPR
+            </h3>
+
+            <p>
+              Graduação em andamento 4° Período, com foco no
+              desenvolvimento da base técnica e
+              profissional em tecnologia.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <h3>
+              Curso de Linux
+            </h3>
+
+            <p>
+              Formação complementar de 40 horas do canal Curso em video no sistema operacional linux.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <h3>
+              Formação ensino médio
+            </h3>
+
+            <p>
+              Finalizado a formação do ensino médio no ano de 2024.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <h3>
+              Programação · Alura
+            </h3>
+
+            <p>
+              Formação complementar em programação
+              e desenvolvimento.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <h3>
+              HTML5 & CSS3
+            </h3>
+
+            <p>
+              Curso de 40 horas com fundamentos
+              de desenvolvimento web.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <div class="dot"></div>
+
+          <div class="glass timeline-card">
+
+            <h3>
+              Lógica de programação · MultiEnsino
+            </h3>
+
+            <p>
+              Curso presencial de 160 horas.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Stack & habilidades</h2>
+      </div>
+
+
+      <div class="skills-grid">
+
+        <div class="glass skill">
+
+          <b>HTML5</b>
+
+          <span>
+            Web
+          </span>
+
+          <div class="bar">
+            <i style="width:88%"></i>
+          </div>
+
+        </div>
+
+
+        <div class="glass skill">
+
+          <b>CSS3</b>
+
+          <span>
+            UI / Design
+          </span>
+
+          <div class="bar">
+            <i style="width:86%"></i>
+          </div>
+
+        </div>
+
+
+        <div class="glass skill">
+
+          <b>JavaScript</b>
+
+          <span>
+            Desenvolvimento
+          </span>
+
+          <div class="bar">
+            <i style="width:72%"></i>
+          </div>
+
+        </div>
+
+
+        <div class="glass skill">
+
+          <b>Python</b>
+
+          <span>
+            Linguagem
+          </span>
+
+          <div class="bar">
+            <i style="width:78%"></i>
+          </div>
+
+        </div>
+
+
+        <div class="glass skill">
+
+          <b>Git & GitHub</b>
+
+          <span>
+            Versionamento
+          </span>
+
+          <div class="bar">
+            <i style="width:78%"></i>
+          </div>
+
+        </div>
+
+
+        <div class="glass skill">
+
+          <b>Java</b>
+
+          <span>
+            Programação
+          </span>
+
+          <div class="bar">
+            <i style="width:48%"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="soft-skills glass">
+
+        <span>Comunicação</span>
+        <span>Trabalho em equipe</span>
+        <span>Aprendizado contínuo</span>
+        <span>Inglês intermediário</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- GITHUB -->
+    <section id="github" class="section container">
+
+      <div class="section-heading">
+        <span>04</span>
+        <h2>GitHub & atividade</h2>
+      </div>
+
+
+      <div class="github-grid">
+
+        <div class="glass github-main">
+
+          <div class="github-top">
+
+            <div>
+
+              <span class="tag">
+                OPEN SOURCE
+              </span>
+
+              <h3>
+                jpmagri-07
+              </h3>
+
+              <p>
+                Projetos, estudos e experimentos em tecnologia.
+              </p>
+
+            </div>
+
+
+            <a
+              class="github-link"
+              href="https://github.com/jpmagri-07"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+
+          <div class="contrib">
+
+            <p>
+              Atividade recente
+            </p>
+
+            <img
+              src="https://github-readme-activity-graph.vercel.app/graph?username=jpmagri-07&theme=github-compact&hide_border=true&area=true"
+              alt="Gráfico de atividade do GitHub de João Pedro Magri"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+
+        <div class="glass github-side">
+
+          <span class="big-icon">
+            ⌁
+          </span>
+
+          <h3>
+            Construindo em público.
+          </h3>
+
+          <p>
+            Quer me conher melhor? Entre em meu repositório do GitHub, lá deixo sempre tudo atualizado além de mostrar meus ultimos projetos como desenvolvedor.
+
+            Acompanhe minha evolução, projetos e
+            experimentos diretamente no GitHub.
+          </p>
+
+          <a
+            href="https://github.com/jpmagri-07"
+            target="_blank"
+            rel="noopener"
+            class="text-link"
+          >
+            Explorar perfil →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact container">
+
+      <div class="contact-inner glass">
+
+        <p class="eyebrow">
+          VAMOS CONVERSAR?
+        </p>
+
+        <h2>
+          Tem uma ideia?
+          <br />
+          <em>Vamos construir.</em>
+        </h2>
+
+        <p>
+          Estou aberto a oportunidades, projetos e
+          conexões na área de tecnologia.
+        </p>
+
+        <a
+          class="btn primary"
+          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-magri-martins-303ba3326"
+        >
+          Entrar em contato ↗
+        </a>
+
+        <div class="contact-line">
+          jpmmagri@gmail.com
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+
+    <span>
+      © 2026 João Pedro Magri
+    </span>
+
+    <span>
+      Feito com código, curiosidade e café.
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
