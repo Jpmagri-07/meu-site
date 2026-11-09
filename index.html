@@ -1,670 +1,488 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
-  <meta
-    name="description"
-    content="Portfólio pessoal de João Pedro Magri — tecnologia, desenvolvimento e projetos."
-  />
-
-  <meta name="theme-color" content="#070b16" />
-
-  <title>João Pedro Magri | Desenvolvedor</title>
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <link
-    rel="shortcut icon"
-    href="img/bb4f4638-98e2-4e11-98af-eeaf085953af.jpg"
-    type="image/x-icon"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="imgs/JP.png" rel="shortcut icon" type="image/x-icon"/>
+<meta content="Portfólio pessoal de João Pedro Magri — tecnologia, desenvolvimento e projetos." name="description"/>
+<meta content="#070b16" name="theme-color"/>
+<title>João Pedro Magri | Dev</title>
+<link href="styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 </head>
-
 <body>
+<div class="bg-grid"></div>
+<div class="orb orb-a"></div>
+<div class="orb orb-b"></div>
 
-  <div class="bg-grid"></div>
+<!-- NAVBAR -->
+<header class="nav">
+  <a class="brand" href="#inicio">
+    <img src="imgs/JP.png" alt="Foto de João Pedro Magri"/>
+    <strong data-i18n="brand">Hi, I'm João Pedro Magri</strong>
+  </a>
 
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
+  <nav>
+    <a data-i18n="navAbout" href="#sobre">Sobre</a>
+    <a data-i18n="navEducation" href="#formacao">Formação</a>
+    <a data-i18n="navSkills" href="#skills">Habilidades</a>
+    <a data-i18n="navGithub" href="#github">GitHub</a>
+    <a data-i18n="navContact" href="#contato">Contato</a>
+    <a data-i18n="navProjects" href="#projetos">Projetos</a>
+  </nav>
 
-  <!-- NAVBAR -->
-  <header class="nav">
+  <!-- BOTÕES À DIREITA -->
+  <div class="nav-actions">
 
-    <a class="brand" href="#inicio">
-        <img src="imgs/perfil-JP2.jpg" alt="Foto de João Pedro Magri"/>
-      <strong>João Pedro</strong>
-    </a>
+    <button id="language-toggle" class="icon-btn" type="button" aria-label="Switch to English" title="Switch to English">🇺🇸</button>
 
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#formacao">Formação</a>
-      <a href="#skills">Skills</a>
-      <a href="#github">GitHub</a>
-      <a href="#contato">Contato</a>
-    </nav>
 
     <button
       id="toggle-theme"
       class="icon-btn"
-      aria-label="Alternar tema"
-    >
-      ☀️
-    </button>
+      type="button"
+      data-i18n-attr="themeLabel:aria-label"
+      aria-label="Alternar tema">☀️</button>
+  </div>
+</header>
 
-  </header>
+<main>
 
+<!-- HERO -->
+<section class="hero container" id="inicio">
+  <div class="hero-copy">
 
-  <main>
+    <!-- STATUS -->
+    <div class="status">
+      <span></span>
+      <span class="status-text" data-i18n="availability">
+        Disponível para novas oportunidades
+      </span>
+    </div>
 
-    <!-- HERO -->
-    <section id="inicio" class="hero container">
+    <!-- SUBTÍTULO -->
+    <p class="eyebrow" data-i18n="eyebrow">
+      FORMANDO · SISTEMAS DE INFORMAÇÃO
+    </p>
 
-      <div class="hero-copy">
+    <!-- TÍTULO PRINCIPAL -->
+    <h1 data-i18n-html="heroTitle">
+      Construindo o <em>próximo</em> passo
+      <br/>
+      com tecnologia.
+    </h1>
 
-        <div class="status">
-          <span></span>
-          Disponível para novas oportunidades
-        </div>
+    <!-- DESCRIÇÃO -->
+    <p class="lead" data-i18n="heroLead">
+      Me chamo João Pedro Magri, sou estudante de Sistemas de Informação
+      e desenvolvedor em formação pela Universidade Federal do Paraná.
+      Transformo curiosidade em projetos, código e aprendizado contínuo.
+    </p>
 
-        <p class="eyebrow">
-          SISTEMAS DE INFORMAÇÃO · TECNOLOGIA
-        </p>
+    <!-- BOTÕES -->
+    <div class="hero-actions">
+      <a class="btn primary" href="#github">
+        <span data-i18n="viewGithub">Ver meu GitHub</span>
+        <span>↗</span>
+      </a>
 
-        <h1>
-          Construindo o <em>próximo</em> passo
-          <br />
-          com tecnologia.
-        </h1>
+      <a class="btn ghost"
+         data-i18n="downloadResume"
+         download="Curriculo-Joao-Pedro-Magri.pdf"
+         href="pdf/curriculo-joao-pedro-magri.pdf">
+        Baixar currículo
+      </a>
+    </div>
 
-        <p class="lead">
-          Sou João Pedro Magri, estudante de Sistemas de Informação
-          e desenvolvedor em formação. Transformo curiosidade em
-          projetos, código e aprendizado contínuo.
-        </p>
-
-        <div class="hero-actions">
-
-          <a
-            class="btn primary"
-            href="#github"
-          >
-            Ver meu GitHub
-            <span>↗</span>
-          </a>
-
-          <a
-            class="btn ghost"
-            href="pdf/curriculo-joao-pedro-magri.pdf"
-            download="Curriculo-Joao-Pedro-Magri.pdf"
-          >
-            Baixar currículo
-          </a>
-
-        </div>
-
-        <div class="quick-stats">
-
-          <div>
-            <strong>BSI</strong>
-            <span>UTFPR</span>
-          </div>
-
-          <div>
-            <strong>JS</strong>
-            <span>full stack JR</span>
-          </div>
-
-          <div>
-            <strong>Git</strong>
-            <span>Versionamento</span>
-          </div>
-
-        </div>
-
+    <!-- ESTATÍSTICAS -->
+    <div class="quick-stats">
+      <div>
+        <strong>BSI</strong>
+        <span>UTFPR</span>
       </div>
 
+      <div>
+        <strong>Full Stack</strong>
+        <span data-i18n="development">Desenvolvimento</span>
+      </div>
 
-      <!-- CARD DE CÓDIGO -->
-      <div class="hero-visual">
+      <div>
+        <strong data-i18n="projectsStat">Projetos</strong>
+        <span data-i18n="scienceTechnology">
+          Ciência &amp; Tecnologia
+        </span>
+      </div>
+    </div>
 
-        <div class="code-card">
+  </div>
 
-          <div class="window-bar">
-
-            <i></i>
-            <i></i>
-            <i></i>
-
-            <span>joao-pedro.js</span>
-
-          </div>
-
-          <pre><code><span class="pink">const</span> developer = {
-  <span class="blue">nome</span>: <span class="green">"João Pedro Magri"</span>,
-  <span class="blue">foco</span>: <span class="green">"Tecnologia"</span>,
-  <span class="blue">linguagens</span>: [
+<!-- CARD DE CÓDIGO -->
+<div class="hero-visual">
+<div class="code-card">
+<div class="window-bar">
+<i></i>
+<i></i>
+<i></i>
+<span>joao-pedro.js</span>
+</div>
+<pre><code><span class="pink">const</span> developer = {
+  <span class="blue" data-i18n="codeName">nome</span>: <span class="green">"João Pedro Magri"</span>,
+  <span class="blue" data-i18n="codeFocus">foco</span>: <span class="green" data-i18n="codeTechnology">"Tecnologia"</span>,
+  <span class="blue" data-i18n="codeLanguages">linguagens</span>: [
     <span class="green">"Java"</span>
     <span class="green">"Python"</span>
-    <span class="green">"JS"</span>,
-    <span class="green">"React"</span>
+    <span class="green">"JS"</span>
+    <span class="green">"R"</span>
   ],
-  <span class="blue">mentalidade</span>: <span class="green">"construir e aprender"</span>
+  <span class="blue" data-i18n="codeMindset">mentalidade</span>: <span class="green" data-i18n="codeBuildLearn">"construir e aprender"</span>
 };
-
+<span class="blue" data-i18n="codeSocial">redesSociais</span>: {
+  <a class="code-social" href="https://www.instagram.com/jpmagri_?stkn=aDRieWdpYWMzNDl1" target="_blank">
+    <img alt="Instagram" src="imgs/logo/logo-insta.png"/> <span class="green">"Instagram"</span>
+  </a>,
+  <a class="code-social" href="http://lattes.cnpq.br/5316339271739641" target="_blank">
+    <img alt="Lattes" src="imgs/logo/logo-lattes.png"/> <span class="green">"Lattes"</span>
+  </a>,
+  <a class="code-social" href="https://github.com/Jpmagri-07" target="_blank">
+    <img alt="GitHub" src="imgs/logo/github-logo.png"/> <span class="green">"GitHub"</span>
+  </a>,
+  <a class="code-social" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-magri-martins-303ba3326/" target="_blank">
+    <img alt="LinkedIn" src="imgs/logo/linkedin_logo-removebg-preview.png"/> <span class="green">"LinkedIn"</span>
+  </a>
+}
 <span class="pink">while</span> (true) {
   developer.<span class="yellow">learn</span>();
   developer.<span class="yellow">build</span>();
 }</code></pre>
-
-        </div>
-
-
-        <div class="floating-chip chip-one">
-          ⌘ Código
-        </div>
-
-        <div class="floating-chip chip-two">
-          ✦ Criatividade
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section container">
-
-      <div class="section-heading">
-        <span>01</span>
-        <h2>Sobre mim</h2>
-      </div>
-
-
-      <div class="about-grid">
-
-        <div class="glass about-card">
-
-          <p class="big">
-            Tecnologia é o lugar onde a
-            <strong>curiosidade encontra criação.</strong>
+</div>
+</div>
+</section>
+<!-- SOBRE -->
+<section class="section container" id="sobre">
+<div class="section-heading">
+<span>01</span>
+<h2 data-i18n="aboutHeading">Sobre mim</h2>
+</div>
+<div class="about-grid">
+<!-- CARD PRINCIPAL -->
+<div class="glass about-card">
+<p class="big" data-i18n-html="aboutIntro">
+            Da curiosidade pela programação
+            <strong>à participação em projetos reais.</strong>
+</p>
+<p data-i18n="aboutParagraph1">
+            Minha trajetória na tecnologia é movida pela curiosidade e pelo interesse em criar soluções para problemas reais. Durante minha formação, venho adquirindo experiência em projetos como o software PEGA e o website do O₃ Mover, integrando programação, pesquisa científica e inovação.
           </p>
-
-          <p>
-            Sou estudante de Sistemas de Informação na UTFPR-Londrina,
-            apaixonado por programação e por aprender como as
-            coisas funcionam.
+<p data-i18n="aboutParagraph2">
+            Essas experiências fortalecem meus conhecimentos técnicos e minha capacidade de trabalhar em equipe.
           </p>
-
-          <p>
-            Meu objetivo é evoluir constantemente e participar
-            da construção de soluções úteis, modernas e
-            impactantes.
+</div>
+<!-- CARD 01 -->
+<div class="glass mini-card">
+<span>01</span>
+<strong data-i18n="aboutMini1Title">Desenvolvimento</strong>
+<p data-i18n="aboutMini1Description">
+            Desenvolvimento de aplicações web e softwares, com foco em soluções funcionais, eficientes e inovadoras.
           </p>
-
-        </div>
-
-
-        <div class="glass mini-card">
-
-          <span>01</span>
-
-          <strong>Aprender</strong>
-
-          <p>
-            Transformar desafios em conhecimento.
+</div>
+<!-- CARD 02 -->
+<div class="glass mini-card">
+<span>02</span>
+<strong data-i18n="aboutMini2Title">Pesquisa &amp; Inovação</strong>
+<p data-i18n="aboutMini2Description">
+            Aplicação da tecnologia em pesquisas científicas e projetos ambientais, promovendo inovação e desenvolvimento de soluções.
           </p>
-
-        </div>
-
-
-        <div class="glass mini-card">
-
-          <span>02</span>
-
-          <strong>Construir</strong>
-
-          <p>
-            Colocar ideias em prática através do código.
+</div>
+<!-- CARD 03 -->
+<div class="glass mini-card">
+<span>03</span>
+<strong data-i18n="aboutMini3Title">Evolução Contínua</strong>
+<p data-i18n="aboutMini3Description">
+            Aplicação da tecnologia em pesquisas científicas e projetos ambientais, promovendo inovação e desenvolvimento de soluções.
           </p>
-
-        </div>
-
-
-        <div class="glass mini-card">
-
-          <span>03</span>
-
-          <strong>Evoluir</strong>
-
-          <p>
-            Buscar novas tecnologias e melhores soluções.
+</div>
+<!-- CARD 04 -->
+<div class="glass mini-card">
+<span>04</span>
+<strong data-i18n="aboutMini4Title">Colaboração</strong>
+<p data-i18n="aboutMini4Description">
+            Trabalho em equipe, compartilhamento de
+            conhecimentos e desenvolvimento de
+            soluções em conjunto.
           </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FORMAÇÃO -->
-    <section id="formacao" class="section container">
-
-      <div class="section-heading">
-        <span>02</span>
-        <h2>Formação & aprendizado</h2>
-      </div>
-
-
-      <div class="timeline">
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <span class="tag">
+</div>
+</div>
+</section>
+<!-- =====================================
+        PROJETOS & DESENVOLVIMENTO
+    ===================================== -->
+<section class="section container" id="projetos">
+<div class="section-heading">
+<span>02</span>
+<h2 data-i18n="projectsHeading">Projetos</h2>
+</div>
+<div class="projects-list">
+<!-- PROJETO 02: SOFTWARE PEGA -->
+<article class="project-card project-pega">
+<div class="project-logo project-video">
+<video aria-label="Demonstração do Software PEGA" autoplay="" data-i18n-attr="pegaVideoLabel:aria-label" loop="" muted="" playsinline="" preload="metadata">
+<source src="videos/pega-acenando.mp4" type="video/mp4"/>
+            Seu navegador não suporta vídeos.
+          </video>
+</div>
+<div class="project-content">
+<div class="project-top">
+<h3>PEGA <em data-i18n="pegaExpansion">(Poluição, Emissão, Gases na Atmosfera)</em></h3>
+<span class="project-type">SOFTWARE</span>
+</div>
+<p class="project-subtitle" data-i18n="pegaSubtitle">
+            Plataforma de Emissões e Gestão Atmosférica
+          </p>
+<p class="project-description" data-i18n="pegaDescription">
+            Software desenvolvido em R Shiny para automatizar a elaboração de inventários de emissões atmosféricas, integrando cálculos, especiação química, distribuição espacial e temporal, visualização de dados e geração de resultados compatíveis com modelos de qualidade do ar, como o WRF-Chem.
+          </p>
+<!--<a
+            href="https://projetoozoniomover.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Conhecer o projeto
+          </a>-->
+<p class="project-status">
+<span class="status-dot"></span>
+            <span data-i18n="pegaStatus">Em desenvolvimento</span>
+          </p>
+</div>
+</article>
+<!-- PROJETO 01: WEBSITE O3 MOVER -->
+<article class="project-card project-website">
+<div class="project-logo">
+<img alt="Logo do Projeto O3 Mover" data-i18n-attr="ozoneLogoAlt:alt" loading="lazy" src="imgs/logo_projeto-ozonio.png">
+</div>
+<div class="project-content">
+<div class="project-top">
+<h3>O₃ Mover</h3>
+<span class="project-type">WEBSITE</span>
+</div>
+<p class="project-subtitle" data-i18n="ozoneSubtitle">
+              Website institucional do Projeto O₃ Mover
+            </p>
+<p class="project-description" data-i18n="ozoneDescription">
+              Website institucional desenvolvido para divulgar o Projeto O₃ Mover, apresentando sua equipe, pesquisas e iniciativas científicas, com foco na qualidade do ar, poluição atmosférica e disseminação do conhecimento científico por meio da tecnologia.
+            </p>
+<a class="project-link" data-i18n="visitWebsite" href="https://projetoozoniomover.org/" rel="noopener noreferrer" target="_blank">
+              Acessar website
+            </a>
+</div>
+</article>
+</div>
+</section>
+<!-- FORMAÇÃO -->
+<section class="section container" id="formacao">
+<div class="section-heading">
+<span>03</span>
+<h2 data-i18n="educationHeading">Formação Academica</h2>
+</div>
+<div class="timeline">
+<article class="timeline-item">
+<div class="dot"></div>
+<div class="glass timeline-card">
+<span class="tag" data-i18n="current">
               ATUAL
             </span>
-
-            <h3>
+<h3 data-i18n="degree">
               Sistemas de Informação · UTFPR
             </h3>
-
-            <p>
+<p data-i18n="degreeDescription">
               Graduação em andamento 4° Período, com foco no
               desenvolvimento da base técnica e
               profissional em tecnologia.
             </p>
-
-          </div>
-
-        </article>
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <h3>
-              Curso de Linux
-            </h3>
-
-            <p>
-              Formação complementar de 40 horas do canal Curso em video no sistema operacional linux.
-            </p>
-
-          </div>
-
-        </article>
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <h3>
+</div>
+</article>
+<article class="timeline-item">
+<div class="dot"></div>
+<div class="glass timeline-card">
+<h3 data-i18n="highSchool">
               Formação ensino médio
             </h3>
-
-            <p>
+<p data-i18n="highSchoolDescription">
               Finalizado a formação do ensino médio no ano de 2024.
             </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <h3>
-              Programação · Alura
-            </h3>
-
-            <p>
-              Formação complementar em programação
-              e desenvolvimento.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <h3>
-              HTML5 & CSS3
-            </h3>
-
-            <p>
-              Curso de 40 horas com fundamentos
-              de desenvolvimento web.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="timeline-item">
-
-          <div class="dot"></div>
-
-          <div class="glass timeline-card">
-
-            <h3>
-              Lógica de programação · MultiEnsino
-            </h3>
-
-            <p>
-              Curso presencial de 160 horas.
-            </p>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-
-      <div class="section-heading">
-        <span>03</span>
-        <h2>Stack & habilidades</h2>
-      </div>
-
-
-      <div class="skills-grid">
-
-        <div class="glass skill">
-
-          <b>HTML5</b>
-
-          <span>
-            Web
-          </span>
-
-          <div class="bar">
-            <i style="width:88%"></i>
-          </div>
-
-        </div>
-
-
-        <div class="glass skill">
-
-          <b>CSS3</b>
-
-          <span>
-            UI / Design
-          </span>
-
-          <div class="bar">
-            <i style="width:86%"></i>
-          </div>
-
-        </div>
-
-
-        <div class="glass skill">
-
-          <b>JavaScript</b>
-
-          <span>
-            Desenvolvimento
-          </span>
-
-          <div class="bar">
-            <i style="width:72%"></i>
-          </div>
-
-        </div>
-
-
-        <div class="glass skill">
-
-          <b>Python</b>
-
-          <span>
-            Linguagem
-          </span>
-
-          <div class="bar">
-            <i style="width:78%"></i>
-          </div>
-
-        </div>
-
-
-        <div class="glass skill">
-
-          <b>Git & GitHub</b>
-
-          <span>
-            Versionamento
-          </span>
-
-          <div class="bar">
-            <i style="width:78%"></i>
-          </div>
-
-        </div>
-
-
-        <div class="glass skill">
-
-          <b>Java</b>
-
-          <span>
+</div>
+</article>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="section container" id="skills">
+<div class="section-heading">
+<span>04</span>
+<h2 data-i18n="skillsHeading">Cursos &amp; Habilidades</h2>
+</div>
+<div class="skills-grid">
+<div class="glass skill">
+<b data-i18n="skill1Name">Java</b>
+<span data-i18n="skill1Category">
             Programação
           </span>
-
-          <div class="bar">
-            <i style="width:48%"></i>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="soft-skills glass">
-
-        <span>Comunicação</span>
-        <span>Trabalho em equipe</span>
-        <span>Aprendizado contínuo</span>
-        <span>Inglês intermediário</span>
-
-      </div>
-
-    </section>
-
-
-    <!-- GITHUB -->
-    <section id="github" class="section container">
-
-      <div class="section-heading">
-        <span>04</span>
-        <h2>GitHub & atividade</h2>
-      </div>
-
-
-      <div class="github-grid">
-
-        <div class="glass github-main">
-
-          <div class="github-top">
-
-            <div>
-
-              <span class="tag">
-                OPEN SOURCE
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill2Name">Python</b>
+<span data-i18n="skill2Category">
+            Linguagem
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill3Name">Linguagem R</b>
+<span data-i18n="skill3Category">
+            Linguagem
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill4Name">HTML5</b>
+<span data-i18n="skill4Category">
+            Web
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill5Name">CSS3</b>
+<span data-i18n="skill5Category">
+            UI / Design
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill6Name">JavaScript</b>
+<span data-i18n="skill6Category">
+            Desenvolvimento
+          </span>
+<div class="bar">
+<i style="width:100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill7Name">Git &amp; GitHub</b>
+<span data-i18n="skill7Category">
+            Versionamento
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill8Name">Inclusão Digital</b>
+<span data-i18n="skill8Category">
+            Tecnologia &amp; Cidadania
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+<div class="glass skill">
+<b data-i18n="skill9Name">Lógica de Programação</b>
+<span data-i18n="skill9Category">
+            Algoritmos &amp; Resolução de Problemas
+          </span>
+<div class="bar">
+<i style="width: 100%"></i>
+</div>
+</div>
+</div>
+<div class="soft-skills glass">
+<span data-i18n="softSkill1">Comunicação</span>
+<span data-i18n="softSkill2">Trabalho em equipe</span>
+<span data-i18n="softSkill3">Aprendizado contínuo</span>
+<span data-i18n="softSkill4">Inglês intermediário</span>
+</div>
+</section>
+<!-- GITHUB -->
+<section class="section container" id="github">
+<div class="section-heading">
+<span>05</span>
+<h2 data-i18n="githubHeading">GitHub &amp; Atividade</h2>
+</div>
+<div class="github-grid">
+<div class="glass github-main">
+<div class="github-top">
+<div>
+<span class="tag" data-i18n="openSource">
+                CÓDIGO ABERTO
               </span>
-
-              <h3>
+<h3>
                 jpmagri-07
               </h3>
-
-              <p>
-                Projetos, estudos e experimentos em tecnologia.
+<p data-i18n="githubDescription">
+                Projetos, códigos e experiências que fazem parte da minha evolução como desenvolvedor.
               </p>
-
-            </div>
-
-
-            <a
-              class="github-link"
-              href="https://github.com/jpmagri-07"
-              target="_blank"
-              rel="noopener"
-            >
-              GitHub ↗
+</div>
+<a class="github-link" href="https://github.com/jpmagri-07" rel="noopener" target="_blank">
+              GitHub
             </a>
-
-          </div>
-
-
-          <div class="contrib">
-            <p>Atividade recente</p>
-
-            <a 
-              href="https://github.com/jpmagri-07"
-              target="_blank"
-              rel="noopener"
-              class="github-activity-link"
-            >
-              <img
-                src="https://github-readme-activity-graph.vercel.app/graph?username=jpmagri-07&theme=github-compact&hide_border=true&area=true"
-                alt="Gráfico de atividade do GitHub de João Pedro Magri"
-                loading="eager"
-                referrerpolicy="no-referrer"
-                onerror="this.style.display='none'; document.getElementById('github-fallback').style.display='block';"
-              />
-
-              <div id="github-fallback" style="display: none;">
-                <strong>Veja minha atividade no GitHub →</strong>
-                <p>Projetos, estudos e evolução constante em tecnologia.</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-
-        <div class="glass github-side">
-
-          <span class="big-icon">
-            ⌁
-          </span>
-
-          <h3>
-            Construindo em público.
-          </h3>
-
-          <p>
-            Quer me conher melhor? Entre em meu repositório do GitHub, lá deixo sempre tudo atualizado além de mostrar meus ultimos projetos como desenvolvedor.
-
-            Acompanhe minha evolução, projetos e
-            experimentos diretamente no GitHub.
-          </p>
-
-          <a
-            href="https://github.com/jpmagri-07"
-            target="_blank"
-            rel="noopener"
-            class="text-link"
-          >
-            Explorar perfil →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTATO -->
-    <section id="contato" class="contact container">
-
-      <div class="contact-inner glass">
-
-        <p class="eyebrow">
-          VAMOS CONVERSAR?
+</div>
+<div class="contrib">
+<p data-i18n="githubActivity">ATIVIDADE NO GITHUB</p>
+<a class="github-activity-link" href="https://github.com/jpmagri-07" rel="noopener" target="_blank">
+<img alt="Atividades do GitHub de João Pedro Magri" data-i18n-attr="githubImageAlt:alt" loading="lazy" onerror="this.style.display='none'; document.getElementById('github-fallback').style.display='block';" referrerpolicy="no-referrer" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jpmagri-07&amp;theme=tokyonight&amp;utm_source=chatgpt.com">
+<div id="github-fallback" style="display: none;">
+<strong data-i18n="githubFallbackTitle">Veja minha atividade no GitHub →</strong>
+<p data-i18n="githubFallbackDescription">Projetos, estudos e evolução constante em tecnologia.</p>
+</div>
+</a>
+</div>
+</div>
+</div></section>
+<!-- CONTATO -->
+<section class="contact container" id="contato">
+<div class="contact-inner glass">
+<p class="eyebrow" data-i18n="contactEyebrow">
+          IDEIAS SE TRANSFORMAM EM POSSIBILIDADES.
         </p>
-
-        <h2>
+<h2 data-i18n-html="contactTitle">
           Tem uma ideia?
-          <br />
-          <em>Vamos construir.</em>
-        </h2>
-
-        <p>
+          <br/>
+<em>Vamos construir.</em>
+</h2>
+<p data-i18n="contactDescription">
           Estou aberto a oportunidades, projetos e
           conexões na área de tecnologia.
         </p>
-
-        <a
-          class="btn primary"
-          href="https://www.linkedin.com/in/jo%C3%A3o-pedro-magri-martins-303ba3326"
-        >
+<a class="btn primary" data-i18n="contactButton" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-magri-martins-303ba3326">
           Entrar em contato ↗
         </a>
-
-        <div class="contact-line">
+<div class="contact-line">
           jpmmagri@gmail.com
         </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="footer container">
-
-    <span>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="footer container">
+<span>
       © 2026 João Pedro Magri
     </span>
-
-    <span>
+<span data-i18n="footerMadeWith">
       Feito com código, curiosidade e café.
     </span>
-
-  </footer>
-
-
-  <script src="script.js"></script>
-
+</footer>
+<script src="script.js"></script>
+<script src="translations.js?v=3"></script>
 </body>
 </html>
